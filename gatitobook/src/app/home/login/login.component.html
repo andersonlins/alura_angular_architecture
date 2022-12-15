@@ -31,5 +31,12 @@
     ></app-mensagem>
   </div>
 
-  <button class="btn btn-primary btn-block" type="submit" [disabled]="loginForm.invalid">Login</button>
+  <button
+    class="btn btn-primary btn-block"
+    type="submit"
+    [disabled]="loginForm.invalid"
+  >
+    Login
+  </button>
 </form>
+<p>Não é usuário? <a [routerLink]="['novousuario']">Se cadastre!</a></p>

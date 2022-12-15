@@ -6,23 +6,17 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LoginComponent } from './login/login.component';
 import { NovoUsuarioComponent } from './novo-usuario/novo-usuario.component';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    LoginComponent,
-    NovoUsuarioComponent
-  ],
+  declarations: [HomeComponent, LoginComponent, NovoUsuarioComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
     FormsModule,
-    MensagemModule
+    MensagemModule,
+    ReactiveFormsModule,
   ],
-  exports: [
-    HomeComponent
-  ]
+  exports: [HomeComponent],
 })
-export class HomeModule { }
+export class HomeModule {}
